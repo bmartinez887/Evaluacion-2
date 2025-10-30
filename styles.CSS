@@ -338,3 +338,34 @@ body{
   .tile__title { font-size: clamp(18px, 4.8vw, 22px); }
   .tile__rule  { width: 140px; }
 }
+
+#portfolio {
+  max-width: 100%;
+  padding-inline: 0;
+  margin-inline: 0;
+}
+
+
+#portfolio.container {
+  max-width: 100%;
+  padding-inline: 0;
+}
+
+
+.tiles {
+  width: 100vw;
+  margin-left: calc(50% - 50vw); 
+  margin-right: calc(50% - 50vw);
+}
+/* Full-width header bar: logo hard left, menu hard right */
+.hero__bar{
+  max-width: none;          /* remove 1200px cap */
+  width: 100vw;             /* span the viewport */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-inline: 28px;     /* keep some breathing room at edges */
+  justify-content: space-between; /* already set, reaffirm */
+}
+
+.brand{margin-left:0}
+.menu{margin-right:0}
