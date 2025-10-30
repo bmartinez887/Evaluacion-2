@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Sofy – Portfolio</title>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero__bar">
+    <div class="brand">
+      <span class="brand__logo">LOGO</span>
+      <span class="brand__tag">CUSTOM</span>
+    </div>
+    <button class="menu">
+      <span>Menu</span> <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <div class="hero__content container">
+    <h1 class="hero__title">Hi, my name is Sofy</h1>
+    <hr class="rule"/>
+    <div class="hero__cta">
+      <p class="hero_kicker">MIS GRANDES RETOS EN MI CARRERA SON … ET ORCI EU LOREM CONSEQUAT TINCIDUNT VIVAMUS ET SAGIT.</p>
+      <a class="btn btn--outline" href="#portfolio">Portafolio <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</header>
+
+
+<div class="nav-overlay" id="navMenu">
+  <button class="nav-close" id="closeMenu">&times;</button>
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#portfolio">Aliquam</a>
+    <a href="#portfolio">Tempus</a>
+    <a href="#portfolio">Magna</a>
+
+    <a class="btn btn--solid" href="#portfolio">Portafolio</a>
+  </nav>
+</div>
+
+
+<main>
+
+<section id="portfolio" class="tiles grid container">
+  <article class="tile tile--blue">
+    <h2 class="tile__title">Aliquam</h2>
+    <hr class="tile__rule" />
+    <p class="tile__kicker">Ipsum dolor sit amet</p>
+  </article>
+
+  <article class="tile tile--purple">
+    <h2 class="tile__title">Tempus</h2>
+    <hr class="tile__rule" />
+    <p class="tile__kicker">Feugiat amet tempus</p>
+  </article>
+
+  <article class="tile tile--red">
+    <h2 class="tile__title">Magna</h2>
+    <hr class="tile__rule" />
+    <p class="tile__kicker">Lorem etiam nullam</p>
+  </article>
+
+  <article class="tile tile--orange">
+    <h2 class="tile__title">Ipsum</h2>
+    <hr class="tile__rule" />
+    <p class="tile__kicker">Nisl sed aliquam</p>
+  </article>
+
+  <article class="tile tile--bp">
+    <h2 class="tile__title">Consequat</h2>
+    <hr class="tile__rule" />
+    <p class="tile__kicker">Ipsum dolor sit amet</p>
+  </article>
+
+  <article class="tile tile--green">
+    <h2 class="tile__title">Etiam</h2>
+    <hr class="tile__rule" />
+    <p class="tile__kicker">Feugiat amet tempus</p>
+  </article>
+</section>
+
+<section class="feature container feature--dark">
+  <h2 class="feature__title">Massa libero</h2>
+  <hr class="rule" />
+  <p class="feature__body">
+    Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula late urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
+  </p>
+  <a class="btn btn--outline" href="#">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+</section>
+
+<section class="contact container grid">
+  <form class="contact__form" action="#" method="post" novalidate>
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+    </div>
+    <div class="field field--full">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+    </div>
+    <div class="actions">
+      <button class="btn btn--solid" type="submit">Send message</button>
+      <button class="btn btn--ghost" type="reset">Clear</button>
+    </div>
+  </form>
+
+  <aside class="contact__info">
+    <ul class="info">
+      <li class="info__item">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+          <h3>Email</h3>
+          <a href="mailto:martinez.brisa22@gmail.com">martinez.brisa22@gmail.com</a>
+        </div>
+      </li>
+      <li class="info__item">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <h3>Phone</h3>
+          <p>(000) 123-4567 x543</p>
+        </div>
+      </li>
+      <li class="info__item">
+        <i class="fa-solid fa-house"></i>
+        <div>
+          <h3>Address</h3>
+          <address>
+            1234 Somewhere Road #5263<br>
+            Nashville, TN 00000<br>
+            Morelia, Méx
+          </address>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <ul class="social">
+    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+  </ul>
+  <p class="credits">© Sofy · Design UVAQ</p>
+</footer>
+
+
+<script>
+  const menuBtn = document.querySelector('.menu');
+  const overlay = document.getElementById('navMenu');
+  const closeBtn = document.getElementById('closeMenu');
+
+  menuBtn.addEventListener('click', () => {
+    overlay.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    overlay.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>
